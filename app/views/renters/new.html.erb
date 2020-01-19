@@ -1,0 +1,7 @@
+<h3>Create a Renter</h3>
+<%= form_for @renter do |f| %>
+  <p>Enter Renter's Name: <%= f.text_field :name, placeholder: "renter name" %></p>
+  <p>Enter Renter's Room Number: <%= f.text_field :room_number, placeholder: "room number" %></p>
+
+  <%= f.submit %>
+<% end %>

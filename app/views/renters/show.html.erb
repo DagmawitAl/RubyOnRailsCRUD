@@ -1,0 +1,6 @@
+<h2>Name: <%= @renter.name%></h2>
+<h4>Room Number: <%= @renter.room_number%></h4>
+
+<%= button_to "All Renters", renters_path, method: :get %>
+<%= button_to "Edit Renter", edit_renter_path(@renter), method: :get %>
+<%= button_to 'Remove Renter', renter_path(@renter), method: 'delete', data: { confirm: 'Are you sure?' } %>

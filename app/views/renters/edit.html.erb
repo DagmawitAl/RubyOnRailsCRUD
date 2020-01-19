@@ -1,0 +1,7 @@
+<h3>Edit a Renter</h3>
+<%= form_for @renter do |f| %>
+  <p>Enter Renter's New Name: <%= f.text_field :name %></p>
+  <p>Enter Renter's Room Number: <%= f.text_field :room_number %></p>
+
+  <%= f.submit %>
+<% end %>
